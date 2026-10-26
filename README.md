@@ -1,1 +1,5 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# 22by7-raikar.github.io
+
+Personal website of Anuj Pai Raikar: https://22by7-raikar.github.io
+
+Plain HTML, CSS and JavaScript with no build step. Edit `index.html` and push to `main`.

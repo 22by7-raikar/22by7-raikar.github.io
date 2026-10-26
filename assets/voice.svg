@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-label="On-device voice interface animation">
+<title>On-device voice interface animation</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#111a2e"/>
+  </linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#1e293b" stroke-width="1"/>
+  </pattern>
+</defs>
+<rect width="480" height="270" rx="18" fill="url(#bg)"/>
+<rect width="480" height="270" rx="18" fill="url(#grid)" opacity="0.55"/>
+<rect x="18" y="18" width="168.2" height="26" rx="13" fill="#22d3ee" fill-opacity="0.15" stroke="#22d3ee" stroke-opacity="0.6"/><text x="29" y="36" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#22d3ee">on-device · C++17</text>
+<circle cx="138.4" cy="168.4" r="6" fill="#22d3ee"/>
+<circle cx="101.6" cy="168.4" r="6" fill="#22d3ee"/>
+<circle cx="101.6" cy="131.6" r="6" fill="#22d3ee"/>
+<circle cx="138.4" cy="131.6" r="6" fill="#22d3ee"/>
+<circle cx="120" cy="150" r="44" fill="none" stroke="#22d3ee" stroke-opacity="0.4"/>
+<circle cx="120" cy="150" r="44" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0"><animate attributeName="r" values="44;105" dur="2.4s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="120" cy="150" r="44" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0"><animate attributeName="r" values="44;105" dur="2.4s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+<circle cx="120" cy="150" r="44" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0"><animate attributeName="r" values="44;105" dur="2.4s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
+<rect x="228" y="139.8" width="6" height="20.4" rx="3" fill="#22d3ee"><animate attributeName="height" values="20.4;36.3;20.4" dur="0.92s" repeatCount="indefinite"/><animate attributeName="y" values="139.8;131.9;139.8" dur="1.06s" repeatCount="indefinite"/></rect>
+<rect x="240" y="129.7" width="6" height="40.5" rx="3" fill="#22d3ee"><animate attributeName="height" values="40.5;11.4;40.5" dur="0.71s" repeatCount="indefinite"/><animate attributeName="y" values="129.7;144.3;129.7" dur="1.20s" repeatCount="indefinite"/></rect>
+<rect x="252" y="139.3" width="6" height="21.5" rx="3" fill="#22d3ee"><animate attributeName="height" values="21.5;20.2;21.5" dur="1.30s" repeatCount="indefinite"/><animate attributeName="y" values="139.3;139.9;139.3" dur="0.98s" repeatCount="indefinite"/></rect>
+<rect x="264" y="124.3" width="6" height="51.5" rx="3" fill="#22d3ee"><animate attributeName="height" values="51.5;32.8;51.5" dur="1.08s" repeatCount="indefinite"/><animate attributeName="y" values="124.3;133.6;124.3" dur="0.79s" repeatCount="indefinite"/></rect>
+<rect x="276" y="129.5" width="6" height="41.0" rx="3" fill="#22d3ee"><animate attributeName="height" values="41.0;53.1;41.0" dur="1.01s" repeatCount="indefinite"/><animate attributeName="y" values="129.5;123.4;129.5" dur="1.14s" repeatCount="indefinite"/></rect>
+<rect x="288" y="128.5" width="6" height="42.9" rx="3" fill="#22d3ee"><animate attributeName="height" values="42.9;11.3;42.9" dur="1.15s" repeatCount="indefinite"/><animate attributeName="y" values="128.5;144.3;128.5" dur="1.05s" repeatCount="indefinite"/></rect>
+<rect x="300" y="138.2" width="6" height="23.7" rx="3" fill="#22d3ee"><animate attributeName="height" values="23.7;9.6;23.7" dur="1.22s" repeatCount="indefinite"/><animate attributeName="y" values="138.2;145.2;138.2" dur="0.98s" repeatCount="indefinite"/></rect>
+<rect x="312" y="127.3" width="6" height="45.4" rx="3" fill="#22d3ee"><animate attributeName="height" values="45.4;53.7;45.4" dur="1.13s" repeatCount="indefinite"/><animate attributeName="y" values="127.3;123.2;127.3" dur="1.25s" repeatCount="indefinite"/></rect>
+<rect x="324" y="135.7" width="6" height="28.5" rx="3" fill="#22d3ee"><animate attributeName="height" values="28.5;49.6;28.5" dur="0.97s" repeatCount="indefinite"/><animate attributeName="y" values="135.7;125.2;135.7" dur="1.26s" repeatCount="indefinite"/></rect>
+<rect x="336" y="123.1" width="6" height="53.7" rx="3" fill="#22d3ee"><animate attributeName="height" values="53.7;13.1;53.7" dur="0.78s" repeatCount="indefinite"/><animate attributeName="y" values="123.1;143.5;123.1" dur="0.83s" repeatCount="indefinite"/></rect>
+<rect x="348" y="120.9" width="6" height="58.2" rx="3" fill="#22d3ee"><animate attributeName="height" values="58.2;30.7;58.2" dur="1.08s" repeatCount="indefinite"/><animate attributeName="y" values="120.9;134.7;120.9" dur="0.88s" repeatCount="indefinite"/></rect>
+<rect x="360" y="132.8" width="6" height="34.4" rx="3" fill="#22d3ee"><animate attributeName="height" values="34.4;28.1;34.4" dur="0.91s" repeatCount="indefinite"/><animate attributeName="y" values="132.8;136.0;132.8" dur="1.05s" repeatCount="indefinite"/></rect>
+<rect x="372" y="130.8" width="6" height="38.4" rx="3" fill="#22d3ee"><animate attributeName="height" values="38.4;55.0;38.4" dur="1.11s" repeatCount="indefinite"/><animate attributeName="y" values="130.8;122.5;130.8" dur="1.26s" repeatCount="indefinite"/></rect>
+<rect x="384" y="123.7" width="6" height="52.5" rx="3" fill="#f472b6"><animate attributeName="height" values="52.5;59.5;52.5" dur="1.10s" repeatCount="indefinite"/><animate attributeName="y" values="123.7;120.2;123.7" dur="0.80s" repeatCount="indefinite"/></rect>
+<rect x="396" y="123.6" width="6" height="52.8" rx="3" fill="#f472b6"><animate attributeName="height" values="52.8;58.2;52.8" dur="1.24s" repeatCount="indefinite"/><animate attributeName="y" values="123.6;120.9;123.6" dur="1.04s" repeatCount="indefinite"/></rect>
+<rect x="408" y="127.4" width="6" height="45.1" rx="3" fill="#f472b6"><animate attributeName="height" values="45.1;19.0;45.1" dur="1.20s" repeatCount="indefinite"/><animate attributeName="y" values="127.4;140.5;127.4" dur="1.04s" repeatCount="indefinite"/></rect>
+<rect x="420" y="138.6" width="6" height="22.8" rx="3" fill="#f472b6"><animate attributeName="height" values="22.8;11.3;22.8" dur="1.21s" repeatCount="indefinite"/><animate attributeName="y" values="138.6;144.4;138.6" dur="1.29s" repeatCount="indefinite"/></rect>
+<rect x="432" y="143.7" width="6" height="12.6" rx="3" fill="#f472b6"><animate attributeName="height" values="12.6;49.6;12.6" dur="0.95s" repeatCount="indefinite"/><animate attributeName="y" values="143.7;125.2;143.7" dur="0.79s" repeatCount="indefinite"/></rect>
+<g><rect x="250" y="206" width="196" height="38" rx="12" fill="#0b1222" stroke="#f472b6"/><text x="348" y="231" text-anchor="middle" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="16" fill="#e2e8f0">“robot, <tspan fill="#f472b6" font-weight="700">stop.</tspan>”</text></g>
+<text x="462" y="36" text-anchor="end" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" fill="#94a3b8">beamform · DOA · whisper</text>
+</svg>

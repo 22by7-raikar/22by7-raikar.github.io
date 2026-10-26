@@ -1,102 +1,176 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anuj Pai Raikar · Robotics Engineer</title>
+  <meta name="description" content="Anuj Pai Raikar builds robots that see, hear, and move: perception, state estimation, planning, control and on-device AI.">
+  <meta name="author" content="Anuj Pai Raikar">
+  <meta property="og:title" content="Anuj Pai Raikar · Robotics Engineer">
+  <meta property="og:description" content="I build robots that see, hear, and move.">
+  <meta property="og:image" content="images/Anuj.jpeg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23070b16'/><circle cx='16' cy='16' r='10' fill='none' stroke='%2322d3ee' stroke-width='2'/><circle cx='16' cy='16' r='3.5' fill='%2322d3ee'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#top"><span class="dot"></span><span>anuj<span class="muted">.raikar</span></span></a>
+    <div class="nav-links">
+      <a href="#loop">What I do</a>
+      <a href="#projects">Projects</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+      <button class="theme" id="theme" aria-label="Toggle light and dark theme">☀</button>
+    </div>
+  </nav>
 
-    <title>Anuj Pai Raikar</title>
+  <header class="hero" id="top">
+    <canvas id="scan" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="kicker">hello, world — I'm</p>
+        <h1>Anuj Pai Raikar</h1>
+        <p class="tagline"><span id="typed">I build robots that see, hear, and move.</span><span class="caret">▌</span></p>
+        <p class="lede">Robotics engineer working on the whole loop: turning point clouds, camera frames and microphone audio into robots that understand the world around them and move safely through it.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my projects ↓</a>
+          <a class="btn" href="mailto:anujpairaikar98@gmail.com">Email</a>
+          <a class="btn" href="data/Anuj_Pai_Raikar.pdf">CV</a>
+          <a class="btn" href="https://github.com/22by7-raikar">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/anuj-pai-raikar/">LinkedIn</a>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <div class="ring"></div>
+        <img class="avatar" src="images/Anuj.jpeg" alt="Anuj Pai Raikar" width="240" height="240">
+      </div>
+    </div>
+    <p class="hint">↖ move your mouse: that's a LiDAR scan with live detections</p>
+  </header>
 
-    <meta name="author" content="Anuj Pai Raikar">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+  <main>
+    <section id="loop">
+      <h2><span class="num">01</span> What I do</h2>
+      <p class="section-lede">I work across the full robot loop, from raw sensors to motion, on cars, drones, robot arms, mobile robots and edge devices.</p>
+      <ol class="loop">
+        <li style="--c: var(--cyan)"><h3>Perceive</h3><p>LiDAR &amp; camera pipelines, 3D detection, multi-object tracking</p></li>
+        <li style="--c: var(--violet)"><h3>Estimate</h3><p>Sensor fusion, Kalman / UKF filtering, attitude estimation</p></li>
+        <li style="--c: var(--amber)"><h3>Plan</h3><p>Motion planning, trajectory generation, learned dynamics</p></li>
+        <li style="--c: var(--green)"><h3>Control</h3><p>MPC, sliding mode control, CBF safety filters</p></li>
+        <li style="--c: var(--pink)"><h3>Interact</h3><p>On-device speech, validated LLM tool calls, VLA policies</p></li>
+      </ol>
+    </section>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Anuj Pai Raikar
-                </p>
-                <p>
-		I'm a AI ML Engineer at <a href="https://www.vizzhy.com/">Vizzhy</a>, where I am working on developing a LLM driven application ingesting multi-modal data (audio, text, images) to deliver personalized health analytics to the users.
-		My main area of expertize is Robotics and Autonomy, I have worked on developing precise docking solutions for AMR's at <a href="https://www.jlg.com/en">JLG Industries - Oshkosh</a> and developed the ML stack for the security robot at <a href="https://dekaresearch.com/">DEKA</a>.
-		I have completed my Masters in Robotics at <a href="https://www.wpi.edu/">Worcester Polytechnic Institute</a> where I worked at the <a href="https://wp.wpi.edu/merlab/"> Manipulation and Environmental Robotics Lab </a> under <a href="https://www.wpi.edu/people/faculty/bcalli">Prof. Berk Cali</a>.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:anujpairaikar98@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Anuj_Pai_Raikar.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://docs.google.com/presentation/d/1NM79t4cRFPLhwcRS0UjefD3z__PuU-TB/present">Portfolio</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/22by7-raikar">Github</a>
+    <section id="projects">
+      <h2><span class="num">02</span> Things I've built</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip on" data-f="all">All</button>
+        <button class="chip" data-f="perceive">Perceive</button>
+        <button class="chip" data-f="estimate">Estimate</button>
+        <button class="chip" data-f="plan">Plan</button>
+        <button class="chip" data-f="control">Control</button>
+        <button class="chip" data-f="interact">Interact</button>
+      </div>
+      <div class="grid" id="grid">
+        <a class="card" data-tags="interact perceive" href="https://github.com/22by7-raikar/On-Device-Voice-Interface">
+          <img src="assets/voice.svg" alt="Mic array and waveform animation" loading="lazy">
+          <div class="card-body"><h3>🎙️ On-Device Voice Interface</h3>
+          <p>A robot that hears you across a noisy room, turns to face you, acts through validated LLM tool calls, and <b>stops the instant you say "stop"</b>. No cloud.</p>
+          <ul class="tags"><li>C++17</li><li>whisper.cpp</li><li>beamforming</li><li>barge-in</li></ul></div>
+        </a>
+        <a class="card" data-tags="interact control plan" href="https://github.com/22by7-raikar/SO_101_semantic_manipulation">
+          <img src="assets/vla-arm.svg" alt="Robot arm moving a block over an obstacle" loading="lazy">
+          <div class="card-body"><h3>🦾 Obstacle-Aware VLA Arm</h3>
+          <p>Steering a fine-tuned vision-language-action policy around obstacles it never saw in training, using live depth costs inside its sampler plus a CBF-QP safety filter.</p>
+          <ul class="tags"><li>SmolVLA</li><li>RealSense</li><li>LeRobot</li><li>CBF-QP</li></ul></div>
+        </a>
+        <a class="card" data-tags="perceive" href="https://github.com/22by7-raikar/Classical-3D_LiDAR_Detection">
+          <img src="assets/lidar-detection.gif" alt="LiDAR point cloud with detected 3D boxes" loading="lazy">
+          <div class="card-body"><h3>🛰️ LiDAR 3D Object Detection</h3>
+          <p>Raw point clouds → ground removal → clusters → tracked 3D boxes, with RANSAC, KD-tree and Euclidean clustering written from scratch.</p>
+          <ul class="tags"><li>C++</li><li>PCL</li><li>RANSAC</li><li>KD-tree</li></ul></div>
+        </a>
+        <a class="card" data-tags="perceive control" href="https://github.com/22by7-raikar/marine-ptz-tracker">
+          <img src="assets/ptz.svg" alt="Pan-tilt camera tracking a boat" loading="lazy">
+          <div class="card-body"><h3>🎯 Marine Pan-Tilt Tracker</h3>
+          <p>A hobby-parts pan/tilt rig that spots a small boat and keeps it in frame, with an Arduino guarding the servos. p95 capture-to-command ≈ 58 ms.</p>
+          <ul class="tags"><li>YOLO11n</li><li>BoT-SORT</li><li>Python</li><li>Arduino</li></ul></div>
+        </a>
+        <a class="card" data-tags="interact" href="https://github.com/22by7-raikar/cpp-edge-audio">
+          <img src="assets/edge-audio.svg" alt="Audio clips passing through an admission gate" loading="lazy">
+          <div class="card-body"><h3>🔊 edge_audio</h3>
+          <p>Why run Whisper on music and fan noise? A microsecond-scale learned gate decides what's worth transcribing: F1 0.920, about a third fewer ASR calls.</p>
+          <ul class="tags"><li>C++17</li><li>DSP</li><li>gradient boosting</li><li>CUDA</li></ul></div>
+        </a>
+        <a class="card" data-tags="plan control estimate" href="https://github.com/22by7-raikar/gem_ws">
+          <img src="assets/mpc.svg" alt="Car following a path" loading="lazy">
+          <div class="card-body"><h3>🚗 Learned Dynamics + MPC</h3>
+          <p>A neural network learns how a car drives; a model-predictive controller then uses it to follow an 835 m, 3,822-waypoint path in simulation.</p>
+          <ul class="tags"><li>ROS</li><li>Gazebo</li><li>PyTorch</li><li>CVXPY</li></ul></div>
+        </a>
+        <a class="card" data-tags="perceive estimate" href="https://github.com/22by7-raikar/2D-Feature-Tracking-Collision-Detection">
+          <img src="assets/feature-tracking.png" alt="Keypoint matches between driving frames" loading="lazy">
+          <div class="card-body"><h3>👁️ Camera Feature Tracking</h3>
+          <p>Tracking the car ahead frame-to-frame by benchmarking keypoint detectors and descriptors on real driving data.</p>
+          <ul class="tags"><li>C++</li><li>OpenCV</li><li>KITTI</li></ul></div>
+        </a>
+        <a class="card" data-tags="control plan" href="https://github.com/22by7-raikar/SMC_Quadrotor">
+          <img src="assets/quadrotor.svg" alt="Quadrotor flying a waypoint trajectory" loading="lazy">
+          <div class="card-body"><h3>🚁 Sliding-Mode Quadrotor Control</h3>
+          <p>A robust controller that flies a Crazyflie through quintic-trajectory waypoints with ~2.5 mm mean tracking error.</p>
+          <ul class="tags"><li>C++</li><li>ROS</li><li>Gazebo</li><li>Eigen</li></ul></div>
+        </a>
+      </div>
 
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/Anuj.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Anuj.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <div class="row">
-            <table class="custom-table" width="100%" align="center" style="margin-top: 10px;">
-                <tbody><tr>
-                    <td align="center" width="15%" style="vertical-align: middle;">
-                      <img src="images/Vizzhy.png" width="75%">
-                    </td>
-                    <td align="center" width="15%" style="vertical-align: middle;">
-                      <img src="images/cybic.jpeg" width="75%">
-                    </td>
-                    <td align="center" width="15%" style="vertical-align: middle;">
-                        <img src="images/JLG.jpg" width="80%">
-                    </td>
-        
-                    <td align="center" width="15%" style="vertical-align: middle; ">
-                        <img src="images/DEKA.jpeg" width="80%">
-                    </td>
-        
-                    <td align="center" width="15%" style="vertical-align: middle; ">
-                        <img src="images/WPI.png" width="80%">
-                    </td>
-      
-  
-                    <td align="center" width="15%" style="vertical-align: middle; ">
-                        <img src="images/Orcale.png" width="80%">
-                    </td>
-                    <td align="center" width="15%" style="vertical-align: middle; ">
-                      <img src="images/VIT.jpg" width="80%">
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="vertical-align: middle; ">
-                    <b "="">AI ML Engineer</b> Vizzhy<br><br>Jul 2025 - Present
-                </td>
-                  <td align="center" style="vertical-align: middle; ">
-                    <b "="">Machine Learning Intern</b> Cybic Tech<br><br>Feb 2025 - Jul 2025
-                </td>
-                  <td align="center" style="vertical-align: middle; ">
-                    <b "="">Autonomy Intern</b><br>JLG Industries<br>May 2024 - Aug 2024
-                </td>
-      
-                  <td align="center" style="vertical-align: middle; ">
-                      <b "="">Machine Learning Intern - Perception</b><br>DEKA<br>May 2022 - Aug 2023
-                  </td>
-      
-                  <td align="center" style="vertical-align: middle; ">
-                      <b "="">Masters in Robotics Engineering </b><br>WPI<br>2022-2024
-                  </td>
-      
-                  <td align="center" style="vertical-align: middle; ">
-                      <b "="">Associate Consultant</b><br>Oracle<br>Aug 2020 - Feb 2022
-                  </td>
-      
-                  <td align="center" style="vertical-align: middle; ">
-                      <b "="">B.Tech Mechanical Engineering</b><br>VIT<br>2016-2020
-                  </td>
-              </tr>
-            </tbody></table>
-        
-  </body>
+      <h3 class="sub">More experiments</h3>
+      <ul class="more">
+        <li data-tags="estimate perceive"><a href="https://github.com/22by7-raikar/LiDAR_Camera_3D_Object_Tracking">LiDAR + camera 3D object tracking</a></li>
+        <li data-tags="estimate"><a href="https://github.com/22by7-raikar/UKF_3D_LiDAR-RADAR_Fusion_Tracking">UKF LiDAR / RADAR fusion</a></li>
+        <li data-tags="perceive estimate plan"><a href="https://github.com/22by7-raikar/RBE595-Hands-On-Autonomous-Aerial-Robotics">Aerial autonomy: attitude estimation, window perception, flying through trees</a></li>
+        <li data-tags="plan"><a href="https://github.com/22by7-raikar/PlanTF_Autonomous_Driving_Stack_Extension">PlanTF autonomous-driving stack extension</a></li>
+        <li data-tags="plan"><a href="https://github.com/22by7-raikar/Motion-Planning-in-Dynamic-Enviroment">Motion planning in dynamic environments</a></li>
+        <li data-tags="estimate"><a href="https://github.com/22by7-raikar/Coursera-State-Estimation-Localization-Self-Driving-Cars">State estimation &amp; localization for self-driving cars</a></li>
+        <li data-tags="control"><a href="https://github.com/22by7-raikar/RBE-595-Reinforcement-Learning">Reinforcement learning</a></li>
+        <li data-tags="perceive"><a href="https://github.com/22by7-raikar/Panoptic_Segmentation">Panoptic segmentation</a></li>
+        <li data-tags="perceive"><a href="https://github.com/22by7-raikar/Synthesizing-2D-Ultrasound-Images-from-3D-CT-Volume">Synthesizing ultrasound images from CT volumes</a></li>
+      </ul>
+    </section>
+
+    <section id="background">
+      <h2><span class="num">03</span> Background</h2>
+      <div class="bg-grid">
+        <div class="bg-card">
+          <h3>🎓 Education</h3>
+          <p><b>MS, Robotics Engineering</b> · Worcester Polytechnic Institute<br><span class="muted">Research in the <a href="https://wp.wpi.edu/merlab/">Manipulation and Environmental Robotics Lab</a> with Prof. Berk Calli</span></p>
+          <p><b>B.Tech, Mechanical Engineering</b> · VIT</p>
+        </div>
+        <div class="bg-card">
+          <h3>🏭 Industry work</h3>
+          <ul>
+            <li>Perception &amp; ML stack for a security robot</li>
+            <li>Precise docking for autonomous mobile robots</li>
+            <li>Enterprise software consulting</li>
+          </ul>
+          <p class="muted">Details in my <a href="data/Anuj_Pai_Raikar.pdf">CV</a> and <a href="https://docs.google.com/presentation/d/1NM79t4cRFPLhwcRS0UjefD3z__PuU-TB/present">portfolio deck</a>.</p>
+        </div>
+        <div class="bg-card">
+          <h3>🧰 Toolbox</h3>
+          <ul class="tags big"><li>C++</li><li>Python</li><li>ROS</li><li>PyTorch</li><li>OpenCV</li><li>PCL</li><li>Eigen</li><li>Gazebo</li><li>LeRobot</li><li>CMake</li><li>Docker</li><li>GitHub Actions</li><li>Arduino</li><li>MATLAB</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Building a robot that has to work outside the lab?</h2>
+    <p>I'd love to hear about it.</p>
+    <a class="btn primary big" href="mailto:anujpairaikar98@gmail.com">anujpairaikar98@gmail.com</a>
+    <p class="links"><a href="https://github.com/22by7-raikar">GitHub</a> · <a href="https://www.linkedin.com/in/anuj-pai-raikar/">LinkedIn</a> · <a href="data/Anuj_Pai_Raikar.pdf">CV</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
