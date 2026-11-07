@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-label="Planner choosing a lane-change trajectory around a car">
+<title>Planner choosing a lane-change trajectory around a car</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#111a2e"/></linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1e293b" stroke-width="1"/></pattern>
+</defs>
+<rect width="480" height="270" rx="18" fill="url(#bg)"/>
+<rect width="480" height="270" rx="18" fill="url(#grid)" opacity="0.55"/>
+<rect x="18" y="18" width="228.39999999999998" height="26" rx="13" fill="#fbbf24" fill-opacity="0.15" stroke="#fbbf24" stroke-opacity="0.6"/><text x="29" y="36" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#fbbf24">learned planner · nuPlan</text><text x="462" y="36" text-anchor="end" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" fill="#94a3b8">TensorRT · 1.2–1.7 ms</text>
+<line x1="20" y1="78" x2="460" y2="78" stroke="#94a3b8" stroke-opacity="0.5" stroke-dasharray="0" stroke-width="2"/>
+<line x1="20" y1="138" x2="460" y2="138" stroke="#94a3b8" stroke-opacity="0.5" stroke-dasharray="14 12" stroke-width="2"/>
+<line x1="20" y1="198" x2="460" y2="198" stroke="#94a3b8" stroke-opacity="0.5" stroke-dasharray="0" stroke-width="2"/>
+<rect x="300" y="150" width="46" height="26" rx="6" fill="#f472b6" fill-opacity="0.8"/>
+<path d="M70 168 C 180 168, 260 168, 290 168" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5" opacity="0"><animate attributeName="opacity" values="0;0.9;0.15;0;0" keyTimes="0;0.15;0.35;0.9;1" dur="6s" repeatCount="indefinite"/></path>
+<path d="M70 168 C 170 168, 220 108, 330 108 S 440 108, 460 108" fill="none" stroke="#34d399" stroke-width="3" stroke-dasharray="0" opacity="0"><animate attributeName="opacity" values="0;0.9;0.95;0.95;0" keyTimes="0;0.15;0.35;0.9;1" dur="6s" repeatCount="indefinite"/></path>
+<path d="M70 168 C 170 168, 230 190, 300 190" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5" opacity="0"><animate attributeName="opacity" values="0;0.9;0.15;0;0" keyTimes="0;0.15;0.35;0.9;1" dur="6s" repeatCount="indefinite"/></path>
+<path d="M70 168 C 160 168, 200 125, 260 120" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5" opacity="0"><animate attributeName="opacity" values="0;0.9;0.15;0;0" keyTimes="0;0.15;0.35;0.9;1" dur="6s" repeatCount="indefinite"/></path>
+<g><rect x="-22" y="-12" width="44" height="24" rx="6" fill="#22d3ee"/><rect x="8" y="-8" width="9" height="16" rx="2" fill="#0b1222"/><animateMotion path="M70 168 C 170 168, 220 108, 330 108 S 440 108, 460 108" dur="6s" rotate="auto" keyPoints="0;0;1;1" keyTimes="0;0.35;0.9;1" calcMode="linear" repeatCount="indefinite"/></g>
+<text x="24" y="250" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="13" fill="#e2e8f0">score the candidate modes, re-rank by geometry, drive the best one</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-label="Vehicle with uncertainty growing and shrinking as measurements arrive">
+<title>Vehicle with uncertainty growing and shrinking as measurements arrive</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#111a2e"/></linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1e293b" stroke-width="1"/></pattern>
+</defs>
+<rect width="480" height="270" rx="18" fill="url(#bg)"/>
+<rect width="480" height="270" rx="18" fill="url(#grid)" opacity="0.55"/>
+<rect x="18" y="18" width="254.2" height="26" rx="13" fill="#a78bfa" fill-opacity="0.15" stroke="#a78bfa" stroke-opacity="0.6"/><text x="29" y="36" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#a78bfa">ES-EKF · IMU + GNSS + LiDAR</text><text x="462" y="36" text-anchor="end" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" fill="#94a3b8">localization</text>
+<path d="M40 220 C 140 220, 160 90, 260 90 S 400 160, 450 120" fill="none" stroke="#334155" stroke-width="22" stroke-linecap="round"/>
+<path d="M40 220 C 140 220, 160 90, 260 90 S 400 160, 450 120" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 8"/>
+<g><circle cx="120" cy="175" r="4" fill="#fbbf24"/><path d="M120 179V197" stroke="#fbbf24" stroke-dasharray="2 3"/></g>
+<g><circle cx="230" cy="62" r="4" fill="#fbbf24"/><path d="M230 66V84" stroke="#fbbf24" stroke-dasharray="2 3"/></g>
+<g><circle cx="340" cy="90" r="4" fill="#fbbf24"/><path d="M340 94V112" stroke="#fbbf24" stroke-dasharray="2 3"/></g>
+<g><circle cx="430" cy="98" r="4" fill="#fbbf24"/><path d="M430 102V120" stroke="#fbbf24" stroke-dasharray="2 3"/></g>
+<g><ellipse rx="22" ry="12" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa"><animate attributeName="rx" values="10;30;10;30;10;30;10;30;10" dur="8s" repeatCount="indefinite"/><animate attributeName="ry" values="6;16;6;16;6;16;6;16;6" dur="8s" repeatCount="indefinite"/></ellipse><rect x="-11" y="-6" width="22" height="12" rx="3" fill="#e2e8f0"/><animateMotion path="M40 220 C 140 220, 160 90, 260 90 S 400 160, 450 120" dur="8s" rotate="auto" repeatCount="indefinite"/></g>
+<text x="24" y="250" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="13" fill="#e2e8f0">predict with the IMU, correct with every fix</text>
+</svg>

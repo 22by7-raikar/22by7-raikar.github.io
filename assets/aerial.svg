@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-label="Quadrotor flying through a window">
+<title>Quadrotor flying through a window</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#111a2e"/></linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1e293b" stroke-width="1"/></pattern>
+</defs>
+<rect width="480" height="270" rx="18" fill="url(#bg)"/>
+<rect width="480" height="270" rx="18" fill="url(#grid)" opacity="0.55"/>
+<rect x="18" y="18" width="297.2" height="26" rx="13" fill="#fbbf24" fill-opacity="0.15" stroke="#fbbf24" stroke-opacity="0.6"/><text x="29" y="36" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#fbbf24">attitude · perception · planning</text><text x="462" y="36" text-anchor="end" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" fill="#94a3b8">aerial robotics</text>
+<rect x="290" y="70" width="110" height="130" rx="6" fill="none" stroke="#f472b6" stroke-width="10"/><rect x="282" y="62" width="126" height="146" rx="8" fill="none" stroke="#f472b6" stroke-opacity="0.35" stroke-dasharray="6 5"><animate attributeName="stroke-opacity" values="0;0.8;0.8;0" keyTimes="0;0.2;0.6;1" dur="6s" repeatCount="indefinite"/></rect><text x="282" y="56" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" fill="#f472b6">window 0.97</text>
+<path d="M70 160 l18 70 h-36 z" fill="#34d399" fill-opacity="0.35"/>
+<path d="M110 180 l18 50 h-36 z" fill="#34d399" fill-opacity="0.35"/>
+<path d="M440 170 l18 60 h-36 z" fill="#34d399" fill-opacity="0.35"/>
+<g><g><path d="M-26 0H26" stroke="#e2e8f0" stroke-width="4"/><circle r="6" fill="#e2e8f0"/><ellipse cx="-26" cy="-4" rx="12" ry="3" fill="#22d3ee"/><ellipse cx="26" cy="-4" rx="12" ry="3" fill="#22d3ee"/><path d="M0 0 V-24" stroke="#fbbf24" stroke-width="2"/><path d="M0 0 H22" stroke="#34d399" stroke-width="2"/><animateTransform attributeName="transform" type="rotate" values="0;-12;6;0;0" keyTimes="0;0.3;0.55;0.75;1" dur="6s" repeatCount="indefinite"/></g><animateMotion path="M40 200 C 150 190, 240 140, 345 135 S 440 120, 470 110" dur="6s" repeatCount="indefinite"/></g>
+<text x="24" y="250" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="13" fill="#e2e8f0">estimate attitude, find the window, fly through it</text>
+</svg>

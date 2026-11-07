@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-label="Robot gripper choosing a grasp and lifting an object">
+<title>Robot gripper choosing a grasp and lifting an object</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#111a2e"/></linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1e293b" stroke-width="1"/></pattern>
+</defs>
+<rect width="480" height="270" rx="18" fill="url(#bg)"/>
+<rect width="480" height="270" rx="18" fill="url(#grid)" opacity="0.55"/>
+<rect x="18" y="18" width="228.39999999999998" height="26" rx="13" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-opacity="0.6"/><text x="29" y="36" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" fill="#34d399">ROS 2 · MoveIt 2 · Panda</text><text x="462" y="36" text-anchor="end" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12" fill="#94a3b8">classical vs learned grasps</text>
+<rect x="60" y="200" width="360" height="12" rx="3" fill="#334155"/>
+<g><rect x="220" y="152" width="44" height="48" rx="6" fill="#fbbf24" fill-opacity="0.85"/><path d="M264 162 q18 0 18 14 q0 14 -18 14" fill="none" stroke="#fbbf24" stroke-width="5"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -70;0 -70;0 0" keyTimes="0;0.6;0.8;0.95;1" dur="6s" repeatCount="indefinite"/></g>
+<rect x="210" y="166" width="64" height="20" rx="3" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="0" transform="rotate(0 242 176)" opacity="0"><animate attributeName="opacity" values="0;0.9;0.9;0.9;0" keyTimes="0;0.05;0.30;0.6;1" dur="6s" repeatCount="indefinite"/></rect>
+<rect x="210" y="166" width="64" height="20" rx="3" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3" transform="rotate(31 242 176)" opacity="0"><animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.10;0.32;0.6;1" dur="6s" repeatCount="indefinite"/></rect>
+<rect x="210" y="166" width="64" height="20" rx="3" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3" transform="rotate(-31 242 176)" opacity="0"><animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.15;0.34;0.6;1" dur="6s" repeatCount="indefinite"/></rect>
+<rect x="210" y="166" width="64" height="20" rx="3" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3" transform="rotate(-29 242 176)" opacity="0"><animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.20;0.36;0.6;1" dur="6s" repeatCount="indefinite"/></rect>
+<rect x="210" y="166" width="64" height="20" rx="3" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3" transform="rotate(23 242 176)" opacity="0"><animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.25;0.38;0.6;1" dur="6s" repeatCount="indefinite"/></rect>
+<g><rect x="232" y="40" width="20" height="40" rx="3" fill="#e2e8f0"/><rect x="210" y="78" width="64" height="10" rx="3" fill="#e2e8f0"/><rect x="210" y="86" width="9" height="34" rx="2" fill="#22d3ee"><animate attributeName="x" values="210;210;222;222;210" keyTimes="0;0.5;0.6;0.95;1" dur="6s" repeatCount="indefinite"/></rect><rect x="265" y="86" width="9" height="34" rx="2" fill="#22d3ee"><animate attributeName="x" values="265;265;256;256;265" keyTimes="0;0.5;0.6;0.95;1" dur="6s" repeatCount="indefinite"/></rect><animateTransform attributeName="transform" type="translate" values="0 -20;0 -20;0 52;0 52;0 -18;0 -18;0 -20" keyTimes="0;0.3;0.5;0.6;0.8;0.95;1" dur="6s" repeatCount="indefinite"/></g>
+<text x="24" y="250" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="13" fill="#e2e8f0">find a grasp on an unknown object, plan, pick, lift, shake</text>
+</svg>
