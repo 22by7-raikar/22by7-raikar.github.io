@@ -4,171 +4,218 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anuj Pai Raikar · Robotics Engineer</title>
-  <meta name="description" content="Anuj Pai Raikar builds robots that see, hear, and move: perception, state estimation, planning, control and on-device AI.">
+  <meta name="description" content="Anuj Pai Raikar, robotics engineer working on perception, sensor fusion and state estimation for autonomous systems.">
   <meta name="author" content="Anuj Pai Raikar">
   <meta property="og:title" content="Anuj Pai Raikar · Robotics Engineer">
-  <meta property="og:description" content="I build robots that see, hear, and move.">
-  <meta property="og:image" content="images/Anuj.jpeg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23070b16'/><circle cx='16' cy='16' r='10' fill='none' stroke='%2322d3ee' stroke-width='2'/><circle cx='16' cy='16' r='3.5' fill='%2322d3ee'/></svg>">
+  <meta property="og:description" content="Perception, sensor fusion and state estimation for autonomous systems.">
+  <meta property="og:image" content="assets/lidar-detection-tracking.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111827'/><text x='16' y='21.5' font-family='Helvetica,Arial,sans-serif' font-size='14' font-weight='700' fill='white' text-anchor='middle'>AR</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 <body>
-  <nav class="nav">
-    <a class="brand" href="#top"><span class="dot"></span><span>anuj<span class="muted">.raikar</span></span></a>
-    <div class="nav-links">
-      <a href="#loop">What I do</a>
+  <header class="nav">
+    <a class="brand" href="#top">Anuj Pai Raikar</a>
+    <nav>
+      <a href="#work">Work</a>
       <a href="#projects">Projects</a>
-      <a href="#background">Background</a>
-      <a href="#contact">Contact</a>
-      <button class="theme" id="theme" aria-label="Toggle light and dark theme">☀</button>
-    </div>
-  </nav>
-
-  <header class="hero" id="top">
-    <canvas id="scan" aria-hidden="true"></canvas>
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="kicker">hello, world — I'm</p>
-        <h1>Anuj Pai Raikar</h1>
-        <p class="tagline"><span id="typed">I build robots that see, hear, and move.</span><span class="caret">▌</span></p>
-        <p class="lede">Robotics engineer working on the whole loop: turning point clouds, camera frames and microphone audio into robots that understand the world around them and move safely through it.</p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">See my projects ↓</a>
-          <a class="btn" href="mailto:anujpairaikar98@gmail.com">Email</a>
-          <a class="btn" href="data/Anuj_Pai_Raikar.pdf">CV</a>
-          <a class="btn" href="https://github.com/22by7-raikar">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/anuj-pai-raikar/">LinkedIn</a>
-        </div>
-      </div>
-      <div class="avatar-wrap">
-        <div class="ring"></div>
-        <img class="avatar" src="images/Anuj.jpeg" alt="Anuj Pai Raikar" width="240" height="240">
-      </div>
-    </div>
-    <p class="hint">↖ move your mouse: that's a LiDAR scan with live detections</p>
+      <a href="#about">About</a>
+      <a href="data/Anuj_Pai_Raikar.pdf">CV</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </nav>
   </header>
 
-  <main>
-    <section id="loop">
-      <h2><span class="num">01</span> What I do</h2>
-      <p class="section-lede">I work across the full robot loop, from raw sensors to motion, on cars, drones, robot arms, mobile robots and edge devices.</p>
-      <ol class="loop">
-        <li style="--c: var(--cyan)"><h3>Perceive</h3><p>LiDAR &amp; camera pipelines, 3D detection, multi-object tracking</p></li>
-        <li style="--c: var(--violet)"><h3>Estimate</h3><p>Sensor fusion, Kalman / UKF filtering, attitude estimation</p></li>
-        <li style="--c: var(--amber)"><h3>Plan</h3><p>Motion planning, trajectory generation, learned dynamics</p></li>
-        <li style="--c: var(--green)"><h3>Control</h3><p>MPC, sliding mode control, CBF safety filters</p></li>
-        <li style="--c: var(--pink)"><h3>Interact</h3><p>On-device speech, validated LLM tool calls, VLA policies</p></li>
-      </ol>
+  <main id="top">
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Robotics Engineer</p>
+        <h1>Perception, sensor fusion and state estimation for autonomous systems.</h1>
+        <p class="lede">I build the software that lets a robot understand its surroundings and act on them: LiDAR, radar and camera pipelines, multi-object tracking, filtering and fusion, and the planning and control layers that use their output. Most of my work is in modern C++ and Python, measured against real data or seeded simulation, and shipped with tests, benchmarks and CI.</p>
+        <p class="links">
+          <a href="mailto:anujpairaikar98@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/anuj-pai-raikar/">LinkedIn</a>
+          <a href="https://github.com/22by7-raikar">GitHub</a>
+          <a href="data/Anuj_Pai_Raikar.pdf">CV</a>
+        </p>
+      </div>
+      <img class="portrait" src="images/Anuj.jpeg" alt="Anuj Pai Raikar" width="220" height="220">
+    </section>
+
+    <ul class="areas" aria-label="Areas of work">
+      <li>3D perception</li>
+      <li>Radar signal processing</li>
+      <li>Sensor fusion &amp; tracking</li>
+      <li>Planning &amp; control</li>
+      <li>Robot manipulation</li>
+      <li>On-device ML</li>
+    </ul>
+
+    <section id="work">
+      <h2>Selected work</h2>
+
+      <article class="feature">
+        <a class="figure dark" href="https://github.com/22by7-raikar/LiDAR_Camera_3D_Tracking_CPP">
+          <img src="assets/lidar-camera-tracking.gif" alt="Tracked lead vehicle with LiDAR bird's-eye view and live time-to-collision on KITTI" loading="lazy">
+        </a>
+        <div class="body">
+          <h3><a href="https://github.com/22by7-raikar/LiDAR_Camera_3D_Tracking_CPP">LiDAR–Camera 3D Tracking</a></h3>
+          <p>Vehicle detection with YOLOv8, LiDAR points projected into the image and clustered per detection, keypoint matching and persistent track IDs on KITTI. For the lead vehicle, LiDAR range and the camera's scale change are fused in a Kalman filter into a time-to-collision estimate that stays stable when either sensor misbehaves.</p>
+          <dl class="metrics">
+            <div><dt>0.94 s</dt><dd>fused TTC error, vs 5.20 s for the nearest-point baseline</dd></div>
+            <div><dt>0.38 s</dt><dd>TTC jitter, lowest of all estimators</dd></div>
+            <div><dt>35</dt><dd>keypoint detector/descriptor pairs benchmarked</dd></div>
+          </dl>
+          <p class="stack">C++17 · OpenCV · ONNX Runtime · Kalman filtering · KITTI</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <a class="figure" href="https://github.com/22by7-raikar/LiDAR_Radar_3D_Tracking_CPP">
+          <img src="assets/lidar-radar-tracking.gif" alt="LiDAR scan, radar range-bearing and range-Doppler views, and fused tracks through a cut-in and a hard brake" loading="lazy">
+        </a>
+        <div class="body">
+          <h3><a href="https://github.com/22by7-raikar/LiDAR_Radar_3D_Tracking_CPP">LiDAR–Radar 3D Tracking</a></h3>
+          <p>Multi-target vehicle tracking from LiDAR and radar with classical estimation throughout: an IMM of CTRV unscented Kalman filters, χ² gating, Hungarian assignment, log-likelihood-ratio track management and an L-shape box detector on ray-cast scans. A seeded highway simulator with a moving ego vehicle measures every design choice.</p>
+          <dl class="metrics">
+            <div><dt>0.06 m</dt><dd>fused position RMSE (LiDAR only 0.08 m, radar only 0.33 m)</dd></div>
+            <div><dt>0.27 m/s</dt><dd>fused velocity RMSE</dd></div>
+            <div><dt>100</dt><dd>seeded runs per ablation</dd></div>
+          </dl>
+          <p class="stack">C++17 · Eigen · IMM / UKF · Hungarian assignment</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <a class="figure" href="https://github.com/22by7-raikar/RADAR_Perception_CPP">
+          <img src="assets/radar-point-cloud.png" alt="Radar point cloud accumulated over 50 frames" loading="lazy">
+        </a>
+        <div class="body">
+          <h3><a href="https://github.com/22by7-raikar/RADAR_Perception_CPP">FMCW Radar Perception</a></h3>
+          <p>A real-time radar stack from raw IQ frames to tracked, classified objects: windowed range-Doppler FFT, CFAR with the threshold solved from a target false-alarm rate, TDM-MIMO 4D angle estimation, DBSCAN clustering and EKF tracking. Interference, clutter masking and multipath ghosts are simulated and mitigated.</p>
+          <dl class="metrics">
+            <div><dt>3.8 ms</dt><dd>mean signal-chain latency per frame, one CPU core</dd></div>
+            <div><dt>100%</dt><dd>detection rate with zero false alarms on the default scene</dd></div>
+            <div><dt>1 cm</dt><dd>mean range error with a 1 m bin</dd></div>
+          </dl>
+          <p class="stack">C++ · GoogleTest · Google Benchmark · ASan/UBSan · CI</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <a class="figure dark" href="https://github.com/22by7-raikar/LiDAR_3D_OD_CPP">
+          <img src="assets/lidar-detection-tracking.png" alt="3D LiDAR detections and tracks in the viewer" loading="lazy">
+        </a>
+        <div class="body">
+          <h3><a href="https://github.com/22by7-raikar/LiDAR_3D_OD_CPP">LiDAR 3D Detection &amp; Tracking</a></h3>
+          <p>Classical 3D object detection and multi-object tracking for spinning LiDAR: zone-based ground segmentation, range-image clustering, gravity-aligned L-shape boxes, NDT ego-motion and Kalman tracking with cascade Hungarian matching. Ground segmentation, clustering, box fitting and ego-motion are each compared against alternative methods with measurements, and a ROS 2 node wraps the pipeline.</p>
+          <dl class="metrics">
+            <div><dt>27 ms</dt><dd>detection per frame on one 2.1 GHz core</dd></div>
+            <div><dt>73 ms</dt><dd>including NDT ego-motion</dd></div>
+            <div><dt>4</dt><dd>stages with measured comparisons of alternative methods</dd></div>
+          </dl>
+          <p class="stack">C++17 · PCL · Eigen · ROS 2</p>
+        </div>
+      </article>
     </section>
 
     <section id="projects">
-      <h2><span class="num">02</span> Things I've built</h2>
-      <div class="filters" role="group" aria-label="Filter projects">
-        <button class="chip on" data-f="all">All</button>
-        <button class="chip" data-f="perceive">Perceive</button>
-        <button class="chip" data-f="estimate">Estimate</button>
-        <button class="chip" data-f="plan">Plan</button>
-        <button class="chip" data-f="control">Control</button>
-        <button class="chip" data-f="interact">Interact</button>
-      </div>
-      <div class="grid" id="grid">
-        <a class="card" data-tags="interact perceive" href="https://github.com/22by7-raikar/On-Device-Voice-Interface">
-          <img src="assets/voice.svg" alt="Mic array and waveform animation" loading="lazy">
-          <div class="card-body"><h3>🎙️ On-Device Voice Interface</h3>
-          <p>A robot that hears you across a noisy room, turns to face you, acts through validated LLM tool calls, and <b>stops the instant you say "stop"</b>. No cloud.</p>
-          <ul class="tags"><li>C++17</li><li>whisper.cpp</li><li>beamforming</li><li>barge-in</li></ul></div>
-        </a>
-        <a class="card" data-tags="interact control plan" href="https://github.com/22by7-raikar/SO_101_semantic_manipulation">
-          <img src="assets/vla-arm.svg" alt="Robot arm moving a block over an obstacle" loading="lazy">
-          <div class="card-body"><h3>🦾 Obstacle-Aware VLA Arm</h3>
-          <p>Steering a fine-tuned vision-language-action policy around obstacles it never saw in training, using live depth costs inside its sampler plus a CBF-QP safety filter.</p>
-          <ul class="tags"><li>SmolVLA</li><li>RealSense</li><li>LeRobot</li><li>CBF-QP</li></ul></div>
-        </a>
-        <a class="card" data-tags="perceive" href="https://github.com/22by7-raikar/Classical-3D_LiDAR_Detection">
-          <img src="assets/lidar-detection.gif" alt="LiDAR point cloud with detected 3D boxes" loading="lazy">
-          <div class="card-body"><h3>🛰️ LiDAR 3D Object Detection</h3>
-          <p>Raw point clouds → ground removal → clusters → tracked 3D boxes, with RANSAC, KD-tree and Euclidean clustering written from scratch.</p>
-          <ul class="tags"><li>C++</li><li>PCL</li><li>RANSAC</li><li>KD-tree</li></ul></div>
-        </a>
-        <a class="card" data-tags="perceive control" href="https://github.com/22by7-raikar/marine-ptz-tracker">
-          <img src="assets/ptz.svg" alt="Pan-tilt camera tracking a boat" loading="lazy">
-          <div class="card-body"><h3>🎯 Marine Pan-Tilt Tracker</h3>
-          <p>A hobby-parts pan/tilt rig that spots a small boat and keeps it in frame, with an Arduino guarding the servos. p95 capture-to-command ≈ 58 ms.</p>
-          <ul class="tags"><li>YOLO11n</li><li>BoT-SORT</li><li>Python</li><li>Arduino</li></ul></div>
-        </a>
-        <a class="card" data-tags="interact" href="https://github.com/22by7-raikar/cpp-edge-audio">
-          <img src="assets/edge-audio.svg" alt="Audio clips passing through an admission gate" loading="lazy">
-          <div class="card-body"><h3>🔊 edge_audio</h3>
-          <p>Why run Whisper on music and fan noise? A microsecond-scale learned gate decides what's worth transcribing: F1 0.920, about a third fewer ASR calls.</p>
-          <ul class="tags"><li>C++17</li><li>DSP</li><li>gradient boosting</li><li>CUDA</li></ul></div>
-        </a>
-        <a class="card" data-tags="plan control estimate" href="https://github.com/22by7-raikar/gem_ws">
-          <img src="assets/mpc.svg" alt="Car following a path" loading="lazy">
-          <div class="card-body"><h3>🚗 Learned Dynamics + MPC</h3>
-          <p>A neural network learns how a car drives; a model-predictive controller then uses it to follow an 835 m, 3,822-waypoint path in simulation.</p>
-          <ul class="tags"><li>ROS</li><li>Gazebo</li><li>PyTorch</li><li>CVXPY</li></ul></div>
-        </a>
-        <a class="card" data-tags="perceive estimate" href="https://github.com/22by7-raikar/2D-Feature-Tracking-Collision-Detection">
-          <img src="assets/feature-tracking.png" alt="Keypoint matches between driving frames" loading="lazy">
-          <div class="card-body"><h3>👁️ Camera Feature Tracking</h3>
-          <p>Tracking the car ahead frame-to-frame by benchmarking keypoint detectors and descriptors on real driving data.</p>
-          <ul class="tags"><li>C++</li><li>OpenCV</li><li>KITTI</li></ul></div>
-        </a>
-        <a class="card" data-tags="control plan" href="https://github.com/22by7-raikar/SMC_Quadrotor">
-          <img src="assets/quadrotor.svg" alt="Quadrotor flying a waypoint trajectory" loading="lazy">
-          <div class="card-body"><h3>🚁 Sliding-Mode Quadrotor Control</h3>
-          <p>A robust controller that flies a Crazyflie through quintic-trajectory waypoints with ~2.5 mm mean tracking error.</p>
-          <ul class="tags"><li>C++</li><li>ROS</li><li>Gazebo</li><li>Eigen</li></ul></div>
-        </a>
-      </div>
-
-      <h3 class="sub">More experiments</h3>
-      <ul class="more">
-        <li data-tags="estimate perceive"><a href="https://github.com/22by7-raikar/LiDAR_Camera_3D_Object_Tracking">LiDAR + camera 3D object tracking</a></li>
-        <li data-tags="estimate"><a href="https://github.com/22by7-raikar/UKF_3D_LiDAR-RADAR_Fusion_Tracking">UKF LiDAR / RADAR fusion</a></li>
-        <li data-tags="perceive estimate plan"><a href="https://github.com/22by7-raikar/RBE595-Hands-On-Autonomous-Aerial-Robotics">Aerial autonomy: attitude estimation, window perception, flying through trees</a></li>
-        <li data-tags="plan"><a href="https://github.com/22by7-raikar/PlanTF_Autonomous_Driving_Stack_Extension">PlanTF autonomous-driving stack extension</a></li>
-        <li data-tags="plan"><a href="https://github.com/22by7-raikar/Motion-Planning-in-Dynamic-Enviroment">Motion planning in dynamic environments</a></li>
-        <li data-tags="estimate"><a href="https://github.com/22by7-raikar/Coursera-State-Estimation-Localization-Self-Driving-Cars">State estimation &amp; localization for self-driving cars</a></li>
-        <li data-tags="control"><a href="https://github.com/22by7-raikar/RBE-595-Reinforcement-Learning">Reinforcement learning</a></li>
-        <li data-tags="perceive"><a href="https://github.com/22by7-raikar/Panoptic_Segmentation">Panoptic segmentation</a></li>
-        <li data-tags="perceive"><a href="https://github.com/22by7-raikar/Synthesizing-2D-Ultrasound-Images-from-3D-CT-Volume">Synthesizing ultrasound images from CT volumes</a></li>
+      <h2>More projects</h2>
+      <ul class="projects">
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/rangenet-panoptic">RangeNet Panoptic</a></h3>
+          <p>LiDAR panoptic segmentation on range images: a PyTorch 2 re-implementation of LPSAD on top of RangeNet++, which the original authors described but never released.</p>
+          <p class="note">Offset-based instance clustering · trains on a 6 GB laptop GPU</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/panda_learned_grasping">Panda Learned Grasping</a></h3>
+          <p>ROS 2 and MoveIt 2 pick-and-place comparing a classical top-surface grasp detector with a multi-grasp Faster R-CNN, under a YCB benchmarking protocol.</p>
+          <p class="note">Grasps found on all 60 simulated placements · RelaxedIK-style IK in C++</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/SO_101_semantic_manipulation">VLA Guidance on SO-101</a></h3>
+          <p>Training-free, depth-based cost guidance inside a SmolVLA flow-matching sampler to avoid obstacles unseen in training, with a CBF-QP safety filter as backup.</p>
+          <p class="note">In progress</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/PlanTF_Autonomous_Driving_Stack_Extension">PlanTF Extension</a></h3>
+          <p>Extensions to a learned motion planner for nuPlan: geometric mode re-ranking, an 84-scenario benchmark and a TensorRT C++ runtime.</p>
+          <p class="note">NR-CLS 0.8401 → 0.8478 · 1.2–1.7 ms inference vs ~20 ms</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/cpp-edge-audio">edge_audio</a></h3>
+          <p>A C++ runtime that decides whether audio is worth transcribing before spending Whisper compute on it, plus a streaming voice-command loop.</p>
+          <p class="note">F1 0.920 vs 0.807 rule gate · 33% fewer ASR calls · ~1 µs per decision</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/On-Device-Voice-Interface">On-Device Voice Interface</a></h3>
+          <p>A fully on-device speech interface for a robot: microphone-array front end, Whisper, validated LLM tool calls and barge-in.</p>
+          <p class="note">In progress</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/marine-ptz-tracker">Marine PTZ Tracker</a></h3>
+          <p>A pan/tilt camera rig that detects and follows a small marine target, with a microcontroller enforcing actuator limits.</p>
+          <p class="note">p95 capture-to-command ~58 ms · YOLO11n + BoT-SORT</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/FMCW_RADAR_Target_Detection">FMCW Radar Target Detection</a></h3>
+          <p>77 GHz waveform design, range-Doppler processing and 2D CA-CFAR detection.</p>
+          <p class="note">MATLAB and NumPy implementations</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/gem_ws">Learned Dynamics + MPC</a></h3>
+          <p>Neural-network vehicle dynamics identified from simulation, used by a model-predictive controller to track an 835 m path.</p>
+          <p class="note">ROS · Gazebo · PyTorch · CVXPY</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/22by7-raikar/SMC_Quadrotor">Sliding-Mode Quadrotor Control</a></h3>
+          <p>Boundary-layer sliding mode control for a Crazyflie with quintic trajectory generation.</p>
+          <p class="note">2.48 mm mean tracking error</p>
+        </li>
       </ul>
+      <p class="earlier"><span>Earlier and course projects:</span>
+        <a href="https://github.com/22by7-raikar/2D-Feature-Tracking-Collision-Detection">camera feature tracking</a>,
+        <a href="https://github.com/22by7-raikar/LiDAR_Camera_3D_Object_Tracking">LiDAR–camera TTC</a>,
+        <a href="https://github.com/22by7-raikar/UKF_3D_LiDAR-RADAR_Fusion_Tracking">UKF LiDAR/radar fusion</a>,
+        <a href="https://github.com/22by7-raikar/RBE595-Hands-On-Autonomous-Aerial-Robotics">aerial robotics</a>,
+        <a href="https://github.com/22by7-raikar/Motion-Planning-in-Dynamic-Enviroment">motion planning in dynamic environments</a>,
+        <a href="https://github.com/22by7-raikar/Coursera-State-Estimation-Localization-Self-Driving-Cars">state estimation for self-driving cars</a>,
+        <a href="https://github.com/22by7-raikar/RBE-595-Reinforcement-Learning">reinforcement learning</a>,
+        <a href="https://github.com/22by7-raikar/Panoptic_Segmentation">panoptic segmentation</a>,
+        <a href="https://github.com/22by7-raikar/Synthesizing-2D-Ultrasound-Images-from-3D-CT-Volume">ultrasound synthesis from CT</a>.
+      </p>
     </section>
 
-    <section id="background">
-      <h2><span class="num">03</span> Background</h2>
-      <div class="bg-grid">
-        <div class="bg-card">
-          <h3>🎓 Education</h3>
-          <p><b>MS, Robotics Engineering</b> · Worcester Polytechnic Institute<br><span class="muted">Research in the <a href="https://wp.wpi.edu/merlab/">Manipulation and Environmental Robotics Lab</a> with Prof. Berk Calli</span></p>
-          <p><b>B.Tech, Mechanical Engineering</b> · VIT</p>
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <div>
+          <h3>Education</h3>
+          <p><strong>M.S. Robotics Engineering</strong>, Worcester Polytechnic Institute<br>
+          <span class="muted">Research in the <a href="https://wp.wpi.edu/merlab/">Manipulation and Environmental Robotics Lab</a> with Prof. Berk Calli</span></p>
+          <p><strong>B.Tech Mechanical Engineering</strong>, VIT</p>
         </div>
-        <div class="bg-card">
-          <h3>🏭 Industry work</h3>
-          <ul>
-            <li>Perception &amp; ML stack for a security robot</li>
-            <li>Precise docking for autonomous mobile robots</li>
-            <li>Enterprise software consulting</li>
-          </ul>
-          <p class="muted">Details in my <a href="data/Anuj_Pai_Raikar.pdf">CV</a> and <a href="https://docs.google.com/presentation/d/1NM79t4cRFPLhwcRS0UjefD3z__PuU-TB/present">portfolio deck</a>.</p>
+        <div>
+          <h3>Industry</h3>
+          <p>Perception and ML for a security robot, precision docking for autonomous mobile robots, and enterprise software consulting. Details are in my <a href="data/Anuj_Pai_Raikar.pdf">CV</a>.</p>
         </div>
-        <div class="bg-card">
-          <h3>🧰 Toolbox</h3>
-          <ul class="tags big"><li>C++</li><li>Python</li><li>ROS</li><li>PyTorch</li><li>OpenCV</li><li>PCL</li><li>Eigen</li><li>Gazebo</li><li>LeRobot</li><li>CMake</li><li>Docker</li><li>GitHub Actions</li><li>Arduino</li><li>MATLAB</li></ul>
+        <div>
+          <h3>Toolbox</h3>
+          <p>C++ (14/17), Python, ROS / ROS 2, MoveIt 2, PCL, Eigen, OpenCV, PyTorch, TensorRT / ONNX, CMake, GoogleTest, Docker, GitHub Actions, MATLAB</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <h2>Building a robot that has to work outside the lab?</h2>
-    <p>I'd love to hear about it.</p>
-    <a class="btn primary big" href="mailto:anujpairaikar98@gmail.com">anujpairaikar98@gmail.com</a>
-    <p class="links"><a href="https://github.com/22by7-raikar">GitHub</a> · <a href="https://www.linkedin.com/in/anuj-pai-raikar/">LinkedIn</a> · <a href="data/Anuj_Pai_Raikar.pdf">CV</a></p>
+  <footer>
+    <p>Get in touch: <a href="mailto:anujpairaikar98@gmail.com">anujpairaikar98@gmail.com</a></p>
+    <p class="muted"><a href="https://github.com/22by7-raikar">GitHub</a> · <a href="https://www.linkedin.com/in/anuj-pai-raikar/">LinkedIn</a> · <a href="data/Anuj_Pai_Raikar.pdf">CV</a></p>
   </footer>
 
   <script src="main.js"></script>
