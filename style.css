@@ -113,6 +113,15 @@ h2 { font-size: clamp(30px, 4vw, 40px); margin: 0 0 14px; }
 .more li.dim { opacity: .3; }
 
 .bg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.timeline { list-style: none; margin: 0 0 22px; padding: 0; }
+.timeline li { display: grid; grid-template-columns: 170px 1fr; gap: 24px; padding: 20px 22px; margin-bottom: 14px;
+  background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--c); border-radius: 14px; }
+.timeline .when { font: 13px var(--mono); color: var(--c); padding-top: 3px; }
+.timeline h3 { margin: 0 0 6px; font-size: 18px; }
+.timeline h3 span { color: var(--c); }
+.timeline p { margin: 0 0 6px; font-size: 15.5px; color: var(--muted); }
+.timeline p b { color: var(--ink); }
+.bg-grid.two { grid-template-columns: 1fr 1fr; }
 .bg-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
 .bg-card h3 { margin: 0 0 12px; font-size: 18px; }
 .bg-card p, .bg-card li { font-size: 15.5px; }
@@ -132,7 +141,8 @@ footer .links { margin-top: 24px; font-size: 15px; }
   .avatar-wrap { order: -1; justify-self: start; width: 150px; }
   .loop { grid-template-columns: 1fr 1fr; }
   .loop li::after { display: none; }
-  .grid, .grid.small, .bg-grid { grid-template-columns: 1fr; }
+  .grid, .grid.small, .bg-grid, .bg-grid.two { grid-template-columns: 1fr; }
+  .timeline li { grid-template-columns: 1fr; gap: 6px; }
   .more { columns: 1; }
   .nav-links a:not(:last-of-type) { display: none; }
   .hint { display: none; }
